@@ -16,3 +16,4 @@ class Brand extends Model
         return $name_url_encoded;
     }
 }
+
