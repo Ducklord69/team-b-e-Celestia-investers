@@ -10021,7 +10021,42 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .breadcrumb > li + li:before {
-    padding: 0 5px;
+    padding: 0 5px; 
     color: #ccc;
     content: "/ ";
+}
+
+.container {
+    width: 80%; /* Pas dit aan afhankelijk van hoe breed je de container wilt */
+    margin: 0 auto; /* Zorgt ervoor dat de container in het midden staat */
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around; /* Verdeel de kolommen gelijkmatig */
+}
+
+.col-md-4 {
+    flex: 1;
+    margin: 0 10px;
+}
+
+h2 {
+    text-align: center; /* Zorg ervoor dat de headers gecentreerd blijven */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Zorgt voor gecentreerde tekst in de lijst */
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
 }
