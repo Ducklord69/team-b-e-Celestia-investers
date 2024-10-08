@@ -10042,17 +10042,17 @@ a.text-dark:hover, a.text-dark:focus {
     margin: 0 10px;
 }
 
-h2 {
+.container h2 {
     text-align: center; /* Zorg ervoor dat de headers gecentreerd blijven */
 }
 
-ul {
+.container ul {
     list-style: none;
     padding: 0;
     text-align: center; /* Zorgt voor gecentreerde tekst in de lijst */
 }
 
-ul li {
+.container ul li {
     margin-bottom: 10px;
 }
 
