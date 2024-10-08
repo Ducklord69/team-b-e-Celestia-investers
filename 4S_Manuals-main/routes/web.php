@@ -3,10 +3,9 @@
 use Illuminate\Support\Facades\Route;
 
 /*
-|--------------------------------------------------------------------------
+|---------------------------------------------------------------------------
 | Web Routes
-|--------------------------------------------------------------------------
-|
+|---------------------------------------------------------------------------
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
@@ -25,6 +24,7 @@ If we want to add product categories later:
 Productcat:		/category/12/Computers/
 */
 
+// Import your models and controllers
 use App\Models\Brand;
 use App\Http\Controllers\RedirectController;
 use App\Http\Controllers\BrandController;
@@ -33,18 +33,26 @@ use App\Http\Controllers\ManualController;
 use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\LocaleController;
+use App\Http\Controllers\ContactController;
 
-
-// Homepage
+// Route for the homepage
 Route::get('/', function () {
     $brands = Brand::all()->sortBy('name');
     return view('pages.homepage', compact('brands'));
 })->name('home');
 
+// Route for the contact page
+Route::get('/contact', function () {
+    $brands = Brand::all()->sortBy('name'); // Optional
+    return view('pages.contact', compact('brands'));
+})->name('contact');
 
+// Route for handling the contact form submission
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+
+// Redirect routes
 Route::get('/manual/{language}/{brand_slug}/', [RedirectController::class, 'brand']);
 Route::get('/manual/{language}/{brand_slug}/brand.html', [RedirectController::class, 'brand']);
-
 Route::get('/datafeeds/{brand_slug}.xml', [RedirectController::class, 'datafeed']);
 
 // Locale routes
