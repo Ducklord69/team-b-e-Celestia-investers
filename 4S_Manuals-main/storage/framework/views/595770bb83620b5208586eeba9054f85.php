@@ -3,7 +3,7 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
     <div class="container">
-        <a href="/" title="<?php echo e(__('misc.home_alt')); ?>" alt="<?php echo e(__('misc.home_alt')); ?>">
+        <a href="/manual" class="btn btn-download" title="<?php echo e(__('misc.download_manual_alt')); ?>">
             <h1 style="font-size: 3em; font-weight: 700;"><?php echo e(__('misc.homepage_title')); ?></h1>
         </a>
         <?php echo e($introduction_text ?? ''); ?>
