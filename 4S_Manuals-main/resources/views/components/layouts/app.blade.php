@@ -37,8 +37,8 @@
 
     </div>
 
-    <x-footer/>
 </div>
+<x-footer/>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->

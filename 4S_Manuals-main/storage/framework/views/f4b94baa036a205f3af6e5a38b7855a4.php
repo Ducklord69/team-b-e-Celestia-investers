@@ -4,8 +4,8 @@
     <div class="container">
         <!-- Navbar Header / Brand -->
         <div class="navbar-header mr-auto">
-            <a class="navbar-brand" href="/" title="{{ __('misc.home_alt') }}">{{ __('misc.homepage_title') }}</a>
-            <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+            <a class="navbar-brand" href="/" title="<?php echo e(__('misc.home_alt')); ?>"><?php echo e(__('misc.homepage_title')); ?></a>
+            <a class="nav-link" href="<?php echo e(route('contact')); ?>">Contact</a>
 
         </div>
 
@@ -27,3 +27,4 @@
         </div><!--/.navbar-collapse -->
     </div>
 </nav>
+<?php /**PATH C:\all\laragon\www\team-b-e-Celestia-investers\4S_Manuals-main\resources\views/components/navbar.blade.php ENDPATH**/ ?>
