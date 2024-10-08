@@ -15,7 +15,7 @@
     <h2>Social links</h2>
     <p><a href="https://www.instagram.com/sam_sulek/">Instagram</a>
     <p><a href="https://www.facebook.com/?locale=nl_NL">Facebook</a>
-    <p><a href="https://nl.linkedin.com/">Linktin</a>
+    <p><a href="https://nl.linkedin.com/">Linkedin</a>
   </div>  
 </footer>
 
