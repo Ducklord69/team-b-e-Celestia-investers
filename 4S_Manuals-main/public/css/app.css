@@ -10064,36 +10064,6 @@ footer {
     text-align: center;
 }
 
-<<<<<<< HEAD
-=======
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footerpart {
-    flex: 1;
-    padding: 0 20px;
-}
-
-.footerpart h2, .footerpart p {
-    text-align: center;
-    color: white;
-}
-
-footer p{
-    color: white;
-}
-
-
-
-.introduction_text p {
-    font-size: 1.5em; /* Maak de tekst groter */
-    font-weight: bold; /* Dikker gedrukte tekst */
-}
->>>>>>> ebcb3173a4c140616a73857ec3fd327f877fd2fd
 
 .col-md-4 {
     background-color: #f0f4f8;
