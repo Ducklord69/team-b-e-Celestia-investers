@@ -2,7 +2,7 @@
 <div class="jumbotron">
     <div class="container">
         <a href="/" title="<?php echo e(__('misc.home_alt')); ?>" alt="<?php echo e(__('misc.home_alt')); ?>">
-            <h1><?php echo e(__('misc.homepage_title')); ?></h1>
+            <h1 style="font-size: 3em; font-weight: 700;"><?php echo e(__('misc.homepage_title')); ?></h1>
         </a>
         <?php echo e($introduction_text ?? ''); ?>
 
