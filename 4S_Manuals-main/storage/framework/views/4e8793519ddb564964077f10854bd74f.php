@@ -1,7 +1,6 @@
 
 <footer>
-	© <?php echo e(__('misc.copyright')); ?>
-
+  <p>© <?php echo e(__('misc.copyright')); ?></p>
 </footer>
 
 
