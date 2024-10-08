@@ -10102,3 +10102,18 @@ ul li a:hover {
     text-decoration: underline;
 }
 
+.brand-selection {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.brand-selection a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.brand-selection a:hover {
+    text-decoration: underline;
+}

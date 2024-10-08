@@ -13,6 +13,7 @@
     </h1>
 
 
+
     <?php
     $size = count($brands);
     $columns = 3;
@@ -34,9 +35,10 @@
 
                             if (!isset($header_first_letter) || (isset($header_first_letter) && $current_first_letter != $header_first_letter)) {
                                 echo '</ul>
-						<h2>' . $current_first_letter . '</h2>
+						<h2 id="' . $current_first_letter . '">' . $current_first_letter . '</h2>
+                        
 						<ul>';
-                            }
+                            }   
                             $header_first_letter = $current_first_letter
                             ?>
 

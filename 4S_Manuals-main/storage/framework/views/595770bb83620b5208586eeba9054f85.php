@@ -10,4 +10,10 @@
 
     </div>
 </div>
+<div class="brand-selection">
+    <?php $__currentLoopData = range('A', 'Z'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $letter): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+        <a href="#<?php echo e($letter); ?>"><?php echo e($letter); ?></a>
+    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+</div>
+
 <?php /**PATH C:\laragon\www\team-b-e-Celestia-investers\4S_Manuals-main\resources\views/components/header.blade.php ENDPATH**/ ?>
