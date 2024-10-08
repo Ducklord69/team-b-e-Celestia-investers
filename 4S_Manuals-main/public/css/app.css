@@ -10057,7 +10057,7 @@ ul li {
 }
 
 footer {
-    background-color: #f8f9fa;
+    background-color: #495057;
     padding: 20px 0;
     width: 100%;
     text-align: center;
@@ -10077,6 +10077,11 @@ footer {
 
 .footerpart h2, .footerpart p {
     text-align: center;
+    color: white;
+}
+
+footer p{
+    color: white;
 }
 
 
