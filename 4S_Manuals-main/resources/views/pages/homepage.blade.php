@@ -51,8 +51,8 @@
                 unset($header_first_letter);
                 ?>
             @endforeach
-
         </div>
-
+                            
     </div>
+    <x-footer />
 </x-layouts.app>
