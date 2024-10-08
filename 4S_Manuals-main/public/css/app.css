@@ -10042,21 +10042,42 @@ a.text-dark:hover, a.text-dark:focus {
     margin: 0 10px;
 }
 
-.container h2 {
+h2 {
     text-align: center; /* Zorg ervoor dat de headers gecentreerd blijven */
 }
 
-.container ul {
+ul {
     list-style: none;
     padding: 0;
     text-align: center; /* Zorgt voor gecentreerde tekst in de lijst */
 }
 
-.container ul li {
+ul li {
     margin-bottom: 10px;
 }
 
 footer {
     text-align: center;
     padding: 20px 0;
+}
+
+.introduction_text p {
+    font-size: 1.5em; /* Maak de tekst groter */
+    font-weight: bold; /* Dikker gedrukte tekst */
+}
+
+.col-md-4 {
+    background-color: #f0f4f8; /* Pas deze kleur aan naar een achtergrond die past bij de rest van de pagina */
+    padding: 15px;
+    border-radius: 10px; /* Geeft een subtiele afgeronde hoek aan de lijst */
+}
+
+ul li a {
+    color: inherit; /* Neemt de tekstkleur van de parent over, verwijdert de linkkleur */
+    text-decoration: none; /* Verwijdert de standaard onderstreping van links */
+    font-weight: bold; /* Zorgt ervoor dat de links opvallen */
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Optioneel, onderstreping bij hover */
 }
