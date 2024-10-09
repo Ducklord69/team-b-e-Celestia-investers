@@ -8,6 +8,7 @@
     <div class="footerpart">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:4sManual@info.com">4sManual@info.com</a></p>
+      <a class="nav-link" href="{{ route('contact') }}">Contact</a>
     </div>
 
     <div class="footerpart">
