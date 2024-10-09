@@ -10148,3 +10148,43 @@ ul li a:hover {
 .container {
     text-align: center;
 }
+
+.container {
+    width: 80%; /* Of pas dit aan afhankelijk van de gewenste breedte */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Zentraal voor de grid */
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexibele kolommen, minstens 200px breed */
+    gap: 20px; /* Ruimte tussen de grid-items */
+    justify-content: center; /* Centert de grid-items */
+}
+
+.brand-item {
+    padding: 10px;
+    background-color: #f0f4f8;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.brand-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.brand-item a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
