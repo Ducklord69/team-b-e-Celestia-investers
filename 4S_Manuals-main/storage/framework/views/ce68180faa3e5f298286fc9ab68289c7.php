@@ -1,4 +1,3 @@
-<!-- resources/views/layouts/app.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,6 +37,7 @@
 
 <div class="container">
     <div class="row">
+
         <div class="col-md-8">
             <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.header','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
@@ -56,12 +56,13 @@
 <?php endif; ?>
 
             <ul class="breadcrumb">
-                <li><a href="/" title="<?php echo e(__('misc.home_alt')); ?>" alt="<?php echo e(__('misc.home_alt')); ?>"><?php echo e(__('misc.home')); ?></a></li>
+                <li><a href="/" title="<?php echo e(__('misc.home_alt')); ?>"
+                       alt="<?php echo e(__('misc.home_alt')); ?>"><?php echo e(__('misc.home')); ?></a></li>
                 <?php echo e($breadcrumb ?? ''); ?>
 
             </ul>
 
-            <?php if(isset($_GET['q'])): ?>
+            <?php if( isset($_GET['q']) ): ?>
                 <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.search_results','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('search_results'); ?>
@@ -84,15 +85,19 @@
 
             <ul class="breadcrumb">
                 <li>
-                    <a href="/" title="<?php echo e(__('misc.home_alt')); ?>" alt="<?php echo e(__('misc.home_alt')); ?>"><?php echo e(__('misc.home')); ?></a>
-                </li>
+					<a href="/" title="<?php echo e(__('misc.home_alt')); ?>" alt="<?php echo e(__('misc.home_alt')); ?>"><?php echo e(__('misc.home')); ?></a>
+				</li>
                 <?php echo e($breadcrumb ?? ''); ?>
 
             </ul>
+
         </div>
+        
+
     </div>
 
-    <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+</div>
+<?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.footer','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('footer'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -107,10 +112,12 @@
 <?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
 <?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
 <?php endif; ?>
-</div>
 
-<!-- Bootstrap core JavaScript -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>//window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="<?php echo e(asset('/js/app.js')); ?>"></script>
 
 </body>

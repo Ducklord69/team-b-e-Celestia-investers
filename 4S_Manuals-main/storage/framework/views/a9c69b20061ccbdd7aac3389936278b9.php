@@ -1,24 +1,26 @@
-
 <footer>
+  <div class="footer-container">
+    <div class="footerpart">
+      <h2>Over ons</h2>
+      <p>Bij 4S Manuals geloven we dat elke handleiding een brug is tussen een product en zijn gebruikers. Ons doel is om technische informatie toegankelijk te maken voor iedereen, of je nu een professional bent of een beginner. Met jarenlange ervaring in het creëren van hoogwaardige en gebruiksvriendelijke handleidingen, zijn we toegewijd aan het leveren van duidelijke en stapsgewijze instructies die je helpen het meeste uit je producten te halen.</p>
+    </div>
+
+    <div class="footerpart">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:4sManual@info.com">4sManual@info.com</a></p>
+      <a class="nav-link" href="<?php echo e(route('contact')); ?>">Contact</a>
+    </div>
+
+    <div class="footerpart">
+      <h2>Social links</h2>
+      <p><a href="https://www.instagram.com/sam_sulek/">Instagram</a></p>
+      <p><a href="https://www.facebook.com/?locale=nl_NL">Facebook</a></p>
+      <p><a href="https://nl.linkedin.com/">LinkedIn</a></p>
+    </div>  
+  </div>
   <p>© <?php echo e(__('misc.copyright')); ?></p>
-  <div class="footerpart">
-    <h2>over ons</h2>
-    <p>Bij 4S Manuals geloven we dat elke handleiding een brug is tussen een product en zijn gebruikers. Ons doel is om technische informatie toegankelijk te maken voor iedereen, of je nu een professional bent of een beginner. Met jarenlange ervaring in het creëren van hoogwaardige en gebruiksvriendelijke handleidingen, zijn we toegewijd aan het leveren van duidelijke en stapsgewijze instructies die je helpen het meeste uit je producten te halen</p>
-  </div>
-
-  <div class="footerpart">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:4sManual@info.com">4sManual@info.com</a></p>
-    <a class="nav-link" href="<?php echo e(route('contact')); ?>">Contact</a>
-  </div>
-
-  <div class="footerpart">
-    <h2>Social links</h2>
-    <p><a href="https://www.instagram.com/sam_sulek/">Instagram</a>
-    <p><a href="https://www.facebook.com/?locale=nl_NL">Facebook</a>
-    <p><a href="https://nl.linkedin.com/">Linktin</a>
-  </div>  
 </footer>
+
 
 
 
