@@ -5,8 +5,10 @@
         <!-- Navbar Header / Brand -->
         <div class="navbar-header mr-auto">
             <a class="navbar-brand" href="/" title="{{ __('misc.home_alt') }}">{{ __('misc.homepage_title') }}</a>
-            <a class="nav-link" href="{{ route('home') }}">Home</a>
-            <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+            <div class="navigation">
+                <a class="nav-link" href="{{ route('home') }}">Home</a>
+                <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+            </div>
 
         </div>
 
