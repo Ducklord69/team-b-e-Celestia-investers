@@ -10120,26 +10120,31 @@ ul li a:hover {
 
 .btn-download {
     display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    font-weight: 700; /* Make the button text bold */
-    color: white; /* Text color */
-    background-color: #007bff; /* Button background color */
-    border: none; /* Remove default link borders */
-    border-radius: 5px; /* Rounded corners for the button */
-    text-decoration: none; /* Remove link underline */
-    text-align: center; /* Center the text */
-    transition: background-color 0.3s ease; /* Smooth background change */
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .btn-download:hover {
-    background-color: #0056b3; /* Darker color on hover */
-    color: white; /* Maintain white text color on hover */
-    text-decoration: none; /* Keep the text without underline on hover */
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
 }
+
+
+
 
 .navigation{
     display: flex;
     justify-content: space-between;
+    text-align: center;
+}
+
+.container {
     text-align: center;
 }
