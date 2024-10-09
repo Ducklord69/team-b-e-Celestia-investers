@@ -10137,3 +10137,9 @@ ul li a:hover {
     color: white; /* Maintain white text color on hover */
     text-decoration: none; /* Keep the text without underline on hover */
 }
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}

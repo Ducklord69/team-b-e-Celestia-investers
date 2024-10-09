@@ -5,8 +5,10 @@
         <!-- Navbar Header / Brand -->
         <div class="navbar-header mr-auto">
             <a class="navbar-brand" href="/" title="<?php echo e(__('misc.home_alt')); ?>"><?php echo e(__('misc.homepage_title')); ?></a>
-            <a class="nav-link" href="<?php echo e(route('home')); ?>">Home</a>
-            <a class="nav-link" href="<?php echo e(route('contact')); ?>">Contact</a>
+            <div class="navigation">
+                <a class="nav-link" href="<?php echo e(route('home')); ?>">Home</a>
+                <a class="nav-link" href="<?php echo e(route('contact')); ?>">Contact</a>
+            </div>
 
         </div>
 
