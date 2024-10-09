@@ -26,6 +26,10 @@ Route::get('/contact', function () {
 Route::get('/brands', [BrandController::class, 'index'])->name('brands.index');
 Route::get('/brands/{letter}', [BrandController::class, 'index'])->name('brands.index');
 
+Route::get('/manual', function () {
+    return view('pages.manual_view');
+});
+
 // Route for handling the contact form submission
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
