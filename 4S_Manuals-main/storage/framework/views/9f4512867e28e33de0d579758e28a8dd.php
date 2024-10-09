@@ -21,15 +21,7 @@
 
     <p><?php echo e(__('introduction_texts.type_list', ['brand'=>$brand->name])); ?></p>
 
-        <?php $__currentLoopData = $manuals; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $manual): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-            <?php if($manual->locally_available): ?>
-                <a href="/<?php echo e($brand->id); ?>/<?php echo e($brand->getNameUrlEncodedAttribute()); ?>/<?php echo e($manual->id); ?>/" alt="<?php echo e($manual->name); ?>" title="<?php echo e($manual->name); ?>"><?php echo e($manual->name); ?></a>
-                (<?php echo e($manual->filesize_human_readable); ?>)
-            <?php else: ?>
-                <a href="<?php echo e($manual->url); ?>" target="new" alt="<?php echo e($manual->name); ?>" title="<?php echo e($manual->name); ?>"><?php echo e($manual->name); ?></a>
-            <?php endif; ?>
-            <br />
-        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
     <?php
     $size = count($manuals);
     $columns = 3;
